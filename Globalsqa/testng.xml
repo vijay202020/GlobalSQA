@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="paralleltest" parallel="methods" thread-count="2">
+        <classes>
+            <class name="submitForm.newFormTestParallel">
+                <methods>
+                    <include name="completenewformtestParallel1"/>
+                    <include name="completenewformtestParallel2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
